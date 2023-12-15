@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('img.gif') center center fixed;
+    background-size: cover;
+    animation: fadeIn 2s ease-in-out; 
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.05); 
+}
+
+#task-container {
+    margin-top: 20px;
+}
+
+#task-input {
+    padding: 8px;
+    width: 60%;
+}
+
+button {
+    padding: 8px;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    padding: 8px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.delete-btn {
+    cursor: pointer;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
